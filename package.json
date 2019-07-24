@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write \"**/*.js\""
+    "format": "prettier --write \"**/*.js\"",
+    "extension:pack": "zip -r dependabot-clickable-commands.zip dependabot-clickable-commands/"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
