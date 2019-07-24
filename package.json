@@ -1,0 +1,12 @@
+{
+  "name": "dependabot-clickable-commands",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write \"**/*.js\""
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
