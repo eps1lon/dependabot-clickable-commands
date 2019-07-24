@@ -1,7 +1,13 @@
 main();
+document.addEventListener("pjax:end", main);
 
 function main() {
   const description = document.querySelectorAll(".js-comment-container")[0];
+  // not a PR?
+  if (description === undefined) {
+    return;
+  }
+
   const prAuthorName = description.querySelector(
     ".timeline-comment-header .author"
   ).innerText;
