@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
   "name": "Clickable dependabot commands",
-  "version": "0.1",
+  "version": "0.2",
   "content_scripts": [
     {
-      "matches": ["https://github.com/*/*/pull/*"],
+      "matches": ["https://github.com/*"],
       "js": ["clickable-commands.js"]
     }
   ]

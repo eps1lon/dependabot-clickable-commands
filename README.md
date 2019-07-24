@@ -5,7 +5,7 @@ Replaces dependabot commands with a button that will post that command instead o
 ![](preview.gif)
 
 ## Install
-1. [download extension](https://github.com/eps1lon/dependabot-clickable-commands/releases/download/v0.1.0/dependabot-clickable-commands.zip)
+1. [download extension](https://github.com/eps1lon/dependabot-clickable-commands/releases/download/v0.2.0/dependabot-clickable-commands.zip)
 2. Double-click to extract
 3. Navigate to chrome://extensions/
 4. Enable "Developer mode"
@@ -16,6 +16,5 @@ Replaces dependabot commands with a button that will post that command instead o
 
 Accepting PRs to fix those.
 
-- buttons are only added on full page reload
 - doesn't work for `ignore this [patch|minor|major] version`
 - not published/requires too many install steps
