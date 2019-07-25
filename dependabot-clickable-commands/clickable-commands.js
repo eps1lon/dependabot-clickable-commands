@@ -38,11 +38,17 @@ function main() {
  * @param {string} command
  */
 function createCommandClickHandler(command) {
-  return function handleCommandClick() {
+  return function handleCommandClick(event) {
+    const button = event.currentTarget;
+    button.disabled = true;
+    button.textContent += "…";
+
     const commentInput = document.querySelector('[name="comment[body]"]');
     commentInput.value = command;
 
     findFormOf(commentInput).submit();
+
+    commentInput.value = "";
   };
 }
 
