@@ -5,19 +5,6 @@ Replaces dependabot commands with a button that will post that command instead o
 ![](preview.gif)
 
 ## Install
-1. [download extension](https://github.com/eps1lon/dependabot-clickable-commands/releases/download/v0.3.0/dependabot-clickable-commands.zip)
-2. Double-click to extract
-3. Navigate to chrome://extensions/
-4. Enable "Developer mode"
-5. Click "LOAD UNPACKED"
-6. Select extracted extension folder (dependabot-clickable-commands)
 
-### Firefox
-
-Goto https://addons.mozilla.org/en-US/developers/addon/3e8d7402d45c4033a399/versions
-
-## Caveats
-
-Accepting PRs to fix those.
-
-- not published/requires too many install steps
+Available in the [Chrome web store](https://chrome.google.com/webstore/detail/clickable-dependabot-comm/ffidlmejllidmbpfeneoklopdafiljjg)
+and for [Firefox in the Mozilla store](https://addons.mozilla.org/en-US/developers/addon/3e8d7402d45c4033a399)
