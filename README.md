@@ -5,7 +5,7 @@ Replaces dependabot commands with a button that will post that command instead o
 ![](preview.gif)
 
 ## Install
-1. [download extension](https://github.com/eps1lon/dependabot-clickable-commands/releases/download/v0.2.0/dependabot-clickable-commands.zip)
+1. [download extension](https://github.com/eps1lon/dependabot-clickable-commands/releases/download/v0.3.0/dependabot-clickable-commands.zip)
 2. Double-click to extract
 3. Navigate to chrome://extensions/
 4. Enable "Developer mode"
