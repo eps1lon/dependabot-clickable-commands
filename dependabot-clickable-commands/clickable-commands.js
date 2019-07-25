@@ -25,17 +25,44 @@ function main() {
   commands.forEach(code => {
     const command = code.innerText;
 
-    const button = document.createElement("button");
-    button.appendChild(document.createTextNode(command));
-    button.addEventListener("click", createCommandClickHandler(command));
+    /**
+     * matching `@dependabot ignore this [patch|minor|major] version`
+     */
+    const alternatives = command.match(/\[.+?\]/);
+    if (alternatives !== null) {
+      // ["@dependabot ignore this ", " version"]
+      const commandTemplate = command.split(alternatives[0]);
+      code.innerText = commandTemplate[0]; // "@dependabot ignore this"
 
-    code.parentNode.replaceChild(button, code);
+      alternatives[0]
+        .slice(1, -1)
+        .split("|")
+        .forEach(commandValue => {
+          const button = document.createElement("button");
+          button.appendChild(document.createTextNode(commandValue));
+          button.addEventListener(
+            "click",
+            createCommandClickHandler(
+              command.replace(alternatives[0], commandValue)
+            )
+          );
+          code.appendChild(button); // "@dependabot ignore this patch"
+        });
+
+      code.appendChild(document.createTextNode(commandTemplate[1])); // "@dependabot ignore this patch version"
+    } else {
+      const button = document.createElement("button");
+      button.appendChild(document.createTextNode(command));
+
+      button.addEventListener("click", createCommandClickHandler(command));
+      code.parentNode.replaceChild(button, code);
+    }
   });
 }
 
 /**
  *
- * @param {string} command
+ * @param {string} commands
  */
 function createCommandClickHandler(command) {
   return function handleCommandClick(event) {

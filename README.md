@@ -16,5 +16,4 @@ Replaces dependabot commands with a button that will post that command instead o
 
 Accepting PRs to fix those.
 
-- doesn't work for `ignore this [patch|minor|major] version`
 - not published/requires too many install steps
