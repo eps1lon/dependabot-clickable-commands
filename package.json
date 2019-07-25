@@ -5,9 +5,11 @@
   "license": "MIT",
   "scripts": {
     "format": "prettier --write \"**/*.js\"",
-    "extension:pack": "zip -r dependabot-clickable-commands.zip dependabot-clickable-commands/"
+    "extension:pack": "zip -r dependabot-clickable-commands.zip dependabot-clickable-commands/",
+    "extension:pack:firefox": "web-ext build --source-dir ./dependabot-clickable-commands/"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "web-ext": "^3.1.1"
   }
 }

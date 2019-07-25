@@ -12,6 +12,10 @@ Replaces dependabot commands with a button that will post that command instead o
 5. Click "LOAD UNPACKED"
 6. Select extracted extension folder (dependabot-clickable-commands)
 
+### Firefox
+
+Goto https://addons.mozilla.org/en-US/developers/addon/3e8d7402d45c4033a399/versions
+
 ## Caveats
 
 Accepting PRs to fix those.
