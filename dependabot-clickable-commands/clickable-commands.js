@@ -18,11 +18,11 @@ function main() {
   }
 
   const potentialCommands = description.querySelectorAll(".comment-body code");
-  const commands = Array.from(potentialCommands).filter(code =>
+  const commands = Array.from(potentialCommands).filter((code) =>
     /^@dependabot /.test(code.innerText)
   );
 
-  commands.forEach(code => {
+  commands.forEach((code) => {
     const command = code.innerText;
 
     /**
@@ -37,7 +37,7 @@ function main() {
       alternatives[0]
         .slice(1, -1)
         .split("|")
-        .forEach(commandValue => {
+        .forEach((commandValue) => {
           const button = document.createElement("button");
           button.appendChild(document.createTextNode(commandValue));
           button.addEventListener(
