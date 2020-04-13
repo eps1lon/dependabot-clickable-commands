@@ -9,7 +9,7 @@
     "extension:pack:firefox": "web-ext build --source-dir ./dependabot-clickable-commands/"
   },
   "devDependencies": {
-    "prettier": "^2.0.3",
+    "prettier": "^2.0.4",
     "web-ext": "^4.1.0"
   },
   "resolutions": {
