@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "prettier": "^2.0.5",
-    "web-ext": "^4.2.0"
+    "web-ext": "^4.3.0"
   },
   "resolutions": {
     "**/minimist": "^1.0.3"
