@@ -3,6 +3,10 @@
   "version": "0.3.0",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "directory": "https://github.com/eps1lon/dependabot-clickable-commands",
+    "type": "git"
+  },
   "scripts": {
     "format": "prettier --write \"**/*.js\"",
     "extension:pack": "zip -r dependabot-clickable-commands.zip dependabot-clickable-commands/",
