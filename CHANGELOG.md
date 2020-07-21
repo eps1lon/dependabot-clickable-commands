@@ -6,7 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.3.0] - 2017-07-25
+## [0.3.0] - 2020-07-21
+### Fixed
+ - Considers automated security fixes from GitHub ([#15] by @eps1lon)
+
+## [0.3.0] - 2019-07-25
 ### Changed
  - Improved click feedback ([#1] from @ybiquitous)
    - button becomes disabled after click
@@ -15,7 +19,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
  - Comment body is now cleared after submitting ([#1] from @ybiquitous)
-
+ 
+[#15]: https://github.com/eps1lon/dependabot-clickable-commands/pull/15
 [#1]: https://github.com/eps1lon/dependabot-clickable-commands/pull/1
 [2952a93]: https://github.com/eps1lon/dependabot-clickable-commands/commit/2952a93cd12e70f7d27c77803626abdad3914209
 

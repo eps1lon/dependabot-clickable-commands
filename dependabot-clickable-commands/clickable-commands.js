@@ -11,7 +11,11 @@ function main() {
   const prAuthorName = description.querySelector(
     ".timeline-comment-header .author"
   ).innerText;
-  const isDependabotPR = prAuthorName === "dependabot-preview";
+  const isDependabotPR =
+    // name when using the GitHub app
+    prAuthorName === "dependabot-preview" ||
+    // name for automated security fixes from GitHub
+    prAuthorName === "dependabot";
 
   if (isDependabotPR === false) {
     return;
