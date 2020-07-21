@@ -6,9 +6,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.3.0] - 2020-07-21
+## [0.3.1] - 2020-07-21
 ### Fixed
- - Considers automated security fixes from GitHub ([#15] by @eps1lon)
+ - Considers automated security fixes from GitHub ([bfca7f7] by @eps1lon)
 
 ## [0.3.0] - 2019-07-25
 ### Changed
@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
  - Comment body is now cleared after submitting ([#1] from @ybiquitous)
  
-[#15]: https://github.com/eps1lon/dependabot-clickable-commands/pull/15
+[bfca7f7]: https://github.com/eps1lon/dependabot-clickable-commands/commit/bfca7f73280afa487315f65a4cac5ae0e93ac6bb
 [#1]: https://github.com/eps1lon/dependabot-clickable-commands/pull/1
 [2952a93]: https://github.com/eps1lon/dependabot-clickable-commands/commit/2952a93cd12e70f7d27c77803626abdad3914209
 
