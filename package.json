@@ -9,14 +9,9 @@
   },
   "scripts": {
     "format": "prettier --write \"**/*.js\"",
-    "extension:pack": "zip -r dependabot-clickable-commands.zip dependabot-clickable-commands/",
-    "extension:pack:firefox": "web-ext build --source-dir ./dependabot-clickable-commands/"
+    "extension:pack": "cd dependabot-clickable-commands && zip -r ../dependabot-clickable-commands.zip *",
   },
   "devDependencies": {
-    "prettier": "^2.0.5",
-    "web-ext": "^4.3.0"
-  },
-  "resolutions": {
-    "**/minimist": "^1.0.3"
+    "prettier": "^2.0.5"
   }
 }
