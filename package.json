@@ -9,7 +9,7 @@
   },
   "scripts": {
     "format": "prettier --write \"**/*.js\"",
-    "extension:pack": "cd dependabot-clickable-commands && zip -r ../dependabot-clickable-commands.zip *",
+    "extension:pack": "cd dependabot-clickable-commands && zip -r ../dependabot-clickable-commands.zip *"
   },
   "devDependencies": {
     "prettier": "^2.0.5"
