@@ -12,6 +12,6 @@
     "extension:pack": "cd dependabot-clickable-commands && zip -r ../dependabot-clickable-commands.zip *"
   },
   "devDependencies": {
-    "prettier": "^2.2.0"
+    "prettier": "^2.2.1"
   }
 }
