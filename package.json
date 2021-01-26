@@ -1,6 +1,6 @@
 {
   "name": "dependabot-clickable-commands",
-  "version": "0.3.1",
+  "version": "0.3.3",
   "main": "index.js",
   "license": "MIT",
   "repository": {
@@ -9,9 +9,12 @@
   },
   "scripts": {
     "format": "prettier --write \"**/*.js\"",
-    "extension:pack": "cd dependabot-clickable-commands && zip -r ../dependabot-clickable-commands.zip *"
+    "extension:pack": "yarn extension:pack:chrome && yarn extension:pack:firefox",
+    "extension:pack:chrome": "cd dependabot-clickable-commands && zip -r ../dependabot-clickable-commands.chrome.zip *",
+    "extension:pack:firefox": "web-ext build --artifacts-dir ./ --filename dependabot-clickable-commands.firefox.zip --overwrite-dest --source-dir ./dependabot-clickable-commands"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "web-ext": "^5.5.0"
   }
 }
