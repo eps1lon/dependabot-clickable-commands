@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.3.3] - 2021-01-26
+
+- Host [firefox extension on their developer hub](https://addons.mozilla.org/en-US/firefox/addon/dependabot-clickable-commads/)
+## [0.3.2] - 2021-01-26
+
+- Re-publish previous version
+   Attempting to fix firefox store issue "not compatible with Quantum"
 ## [0.3.1] - 2020-07-21
 ### Fixed
  - Considers automated security fixes from GitHub ([bfca7f7] by @eps1lon)
