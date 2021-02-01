@@ -53,7 +53,10 @@ function main() {
 
       code.appendChild(document.createTextNode(commandTemplate[1])); // "@dependabot ignore this patch version"
     } else {
-      const button = createCommandButton(command, createCommandClickHandler(command));
+      const button = createCommandButton(
+        command,
+        createCommandClickHandler(command)
+      );
       code.parentNode.replaceChild(button, code);
     }
   });
