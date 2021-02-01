@@ -6,6 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Add github style classes to the command buttons ([#26] by @nathan815)
+
 ## [0.3.3] - 2021-01-26
 
 - Host [firefox extension on their developer hub](https://addons.mozilla.org/en-US/firefox/addon/dependabot-clickable-commads/)
@@ -27,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
  - Comment body is now cleared after submitting ([#1] from @ybiquitous)
  
+[#26]: https://github.com/eps1lon/dependabot-clickable-commands/pull/26
 [bfca7f7]: https://github.com/eps1lon/dependabot-clickable-commands/commit/bfca7f73280afa487315f65a4cac5ae0e93ac6bb
 [#1]: https://github.com/eps1lon/dependabot-clickable-commands/pull/1
 [2952a93]: https://github.com/eps1lon/dependabot-clickable-commands/commit/2952a93cd12e70f7d27c77803626abdad3914209

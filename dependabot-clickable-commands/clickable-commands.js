@@ -42,10 +42,8 @@ function main() {
         .slice(1, -1)
         .split("|")
         .forEach((commandValue) => {
-          const button = document.createElement("button");
-          button.appendChild(document.createTextNode(commandValue));
-          button.addEventListener(
-            "click",
+          const button = createCommandButton(
+            commandValue,
             createCommandClickHandler(
               command.replace(alternatives[0], commandValue)
             )
@@ -55,10 +53,10 @@ function main() {
 
       code.appendChild(document.createTextNode(commandTemplate[1])); // "@dependabot ignore this patch version"
     } else {
-      const button = document.createElement("button");
-      button.appendChild(document.createTextNode(command));
-
-      button.addEventListener("click", createCommandClickHandler(command));
+      const button = createCommandButton(
+        command,
+        createCommandClickHandler(command)
+      );
       code.parentNode.replaceChild(button, code);
     }
   });
@@ -95,4 +93,18 @@ function findFormOf(input) {
   }
 
   return currentElement;
+}
+
+/**
+ *
+ * @param {string} commandText
+ * @param {EventListener} clickHandler
+ * @returns {HTMLButtonElement}
+ */
+function createCommandButton(commandText, clickHandler) {
+  const button = document.createElement("button");
+  button.appendChild(document.createTextNode(commandText));
+  button.classList.add("btn", "btn-sm");
+  button.addEventListener("click", clickHandler);
+  return button;
 }
