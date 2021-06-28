@@ -14,7 +14,7 @@
     "extension:pack:firefox": "web-ext build --artifacts-dir ./ --filename dependabot-clickable-commands.firefox.zip --overwrite-dest --source-dir ./dependabot-clickable-commands"
   },
   "devDependencies": {
-    "prettier": "^2.2.1",
+    "prettier": "^2.3.2",
     "web-ext": "^5.5.0"
   }
 }
